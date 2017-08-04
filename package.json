@@ -34,6 +34,7 @@
     "extract-text-webpack-plugin": "2.1.0",
     "file-loader": "0.11.1",
     "fs-extra": "3.0.1",
+    "gh-pages": "^1.0.0",
     "html-webpack-plugin": "2.28.0",
     "jest": "20.0.3",
     "jest-cli": "^20.0.4",
@@ -70,7 +71,8 @@
     "styleguide": "styleguidist server",
     "styleguide:build": "styleguidist build",
     "dist": "webpack --config config/webpack.config.library.js",
-    "deploy": "git-directory-deploy --directory _build --branch gh-pages"
+    "deploy1": "git-directory-deploy --directory docs --branch gh-pages",
+    "deploy": "gh-pages -d dist"
   },
   "jest": {
     "collectCoverageFrom": [
