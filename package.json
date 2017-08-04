@@ -8,7 +8,8 @@
     "url": "https://github.com/apennell/annies-component-lab"
   },
   "dependencies": {
-    "classnames": "^2.2.5"
+    "classnames": "^2.2.5",
+    "git-directory-deploy": "^1.5.1"
   },
   "devDependencies": {
     "autoprefixer": "7.1.0",
@@ -68,7 +69,8 @@
     "test": "node scripts/test.js --env=jsdom",
     "styleguide": "styleguidist server",
     "styleguide:build": "styleguidist build",
-    "dist": "webpack --config config/webpack.config.library.js"
+    "dist": "webpack --config config/webpack.config.library.js",
+    "deploy": "git-directory-deploy --directory _build --branch gh-pages"
   },
   "jest": {
     "collectCoverageFrom": [
