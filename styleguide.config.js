@@ -1,7 +1,8 @@
 const loaders = require('loaders');
-
+const path = require('path');
 module.exports = {
 	title: 'Annie\'s Component Lab',
+	styleguideDir: path.join(__dirname, 'docs'),
 	sections: [
 		{
 			name: '',
