@@ -5,10 +5,6 @@ module.exports = {
 	styleguideDir: path.join(__dirname, 'docs'),
 	sections: [
 		{
-			name: '',
-			content: './docs/Intro.md',
-		},
-		{
 			name: 'Identity',
 			components: './src/components/Identity/**/[A-Z]*.jsx',
 		},
